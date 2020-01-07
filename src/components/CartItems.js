@@ -14,7 +14,8 @@ function CartItems({cartItemsList}) {
           </div>
         </div>
       {/* Items go here */
-        cartItemsList.map( (cartItems, i) => <CartItem key={ i } 
+        cartItemsList.map( (cartItems, i) => <CartItem 
+              key={ i } 
               product={cartItems.product.name}
               price = {cartItems.product.priceInCents} 
               qty = {cartItems.quantity}/>)}
